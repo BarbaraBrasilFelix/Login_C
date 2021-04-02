@@ -8,7 +8,7 @@ int main(){
     printf("Informe um nome de usuário: ");
     gets(nome);
     fflush(stdin);
-    printf("insira nova senha: ");
+    printf("insira nova senha diferente do nome de usuário: ");
     gets(senha);
 
     while(!strcmp(nome, senha)){
