@@ -1,17 +1,17 @@
 #include <stdio.h>
-#include <string.h>
+#include <string.h> //para utilização de char
 
 int main(){
 
-    char nome[100], senha[100];
+    char nome[100], senha[100]; //limite de char
 
     printf("Informe um nome de usuário: ");
     gets(nome);
-    fflush(stdin);
+    fflush(stdin); //limpar buffer do teclado
     printf("insira nova senha diferente do nome de usuário: ");
     gets(senha);
 
-    while(!strcmp(nome, senha)){
+    while(!strcmp(nome, senha)){ //comparação !strcmp = igual
         printf("ERROR\n");
         fflush(stdin);
         printf("Informe um nome de usuário: ");
